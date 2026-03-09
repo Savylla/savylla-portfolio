@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savylla Adryan | Produção Audiovisual</title>
+  <meta name="description" content="Savylla Adryan - Filmmaker, IA, Designer, Motion e Fotografia. Portfólio profissional audiovisual.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts fallback (usados ate voce adicionar as fontes premium) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Side Labels -->
+  <div class="side-label side-label--left" id="sideMenu">MENU</div>
+  <div class="side-label side-label--right"><a href="#contato">CONTACT</a></div>
+
+  <!-- Full-screen Navigation Overlay -->
+  <div class="nav-overlay" id="navOverlay">
+    <nav class="nav-overlay__inner">
+      <a href="#hero" class="nav-overlay__link" data-index="01">Início</a>
+      <a href="#trabalhos" class="nav-overlay__link" data-index="02">Trabalhos</a>
+      <a href="#sobre" class="nav-overlay__link" data-index="03">Sobre</a>
+      <a href="#showreel" class="nav-overlay__link" data-index="04">Showreel</a>
+      <a href="#contato" class="nav-overlay__link" data-index="05">Contato</a>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo">SAVYLLA ADRYAN</a>
+      <nav class="header__nav">
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#showreel">Showreel</a>
+        <a href="#contato" class="header__cta">Contato</a>
+      </nav>
+      <button class="header__burger" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <!-- Substitua por seu video: <video autoplay muted loop playsinline src="assets/hero-video.mp4"></video> -->
+      <div class="hero__bg-placeholder"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__title-line"><span class="display-font">Histórias</span> que</span>
+        <span class="hero__title-line">ganham <span class="display-font">vida</span></span>
+      </h1>
+      <p class="hero__subtitle">Filmmaker | IA | Designer | Motion | Fotografia</p>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="sobre" id="sobre">
+    <div class="sobre__container">
+      <div class="sobre__image">
+        <img src="assets/perfil.jpg" alt="Savylla Adryan">
+      </div>
+      <div class="sobre__content">
+        <h2 class="sobre__title accent">
+          Savylla<br>Adryan
+        </h2>
+        <p class="sobre__text">Com formação em Produção Audiovisual, me empenho a mais de 10 anos na área, realizando desde o planejamento do projeto até a finalização do produto.</p>
+        <p class="sobre__text">Atuo como filmmaker, designer e fotógrafo, unindo narrativa visual, motion graphics e inteligência artificial para entregar projetos com identidade própria e impacto real.</p>
+        <a href="#trabalhos" class="btn">Ver Trabalhos</a>
+        <div class="sobre__stats">
+          <div class="sobre__stat">
+            <span class="sobre__stat-num">17+</span>
+            <span class="sobre__stat-label">Projetos</span>
+          </div>
+          <div class="sobre__stat">
+            <span class="sobre__stat-num">10+</span>
+            <span class="sobre__stat-label">Anos</span>
+          </div>
+          <div class="sobre__stat">
+            <span class="sobre__stat-num">15+</span>
+            <span class="sobre__stat-label">Clientes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="quote">
+    <div class="quote__inner">
+      <blockquote class="quote__text">
+        &ldquo;Para criar impacto real, o filme é <span class="accent">a forma mais poderosa e emotiva</span> de comunicação possível&rdquo;
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Trabalhos -->
+  <section class="trabalhos" id="trabalhos">
+    <div class="trabalhos__header">
+      <h2 class="trabalhos__title">Meus <span class="display-font accent">trabalhos</span></h2>
+      <div class="trabalhos__filtros">
+        <button class="trabalhos__filtro active" data-filter="todos">Tudo</button>
+        <button class="trabalhos__filtro" data-filter="video">Vídeo</button>
+        <button class="trabalhos__filtro" data-filter="ia">IA</button>
+        <button class="trabalhos__filtro" data-filter="design">Design</button>
+        <button class="trabalhos__filtro" data-filter="motion">Motion</button>
+        <button class="trabalhos__filtro" data-filter="fotografia">Fotografia</button>
+      </div>
+    </div>
+
+    <div class="trabalhos__grid" id="trabalhosGrid">
+
+      <article class="trabalhos__item trabalhos__item--wide" data-category="design" data-id="1">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/warner-uk-thumb.jpg" alt="Warner Music UK" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Warner Music UK</h3>
+          <span class="trabalhos__cat accent">Design</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="fotografia" data-id="2">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/alma-festival-thumb.jpg" alt="Alma Festival" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Alma Festival</h3>
+          <span class="trabalhos__cat accent">Fotografia</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="fotografia" data-id="3">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/irmaos-scribel-thumb.jpg" alt="Irmaos Scribel" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Irmaos Scribel</h3>
+          <span class="trabalhos__cat accent">Fotografia + Edição</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="fotografia" data-id="4">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/warner-br-thumb.jpg" alt="Warner Music Brasil" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Warner Music Brasil</h3>
+          <span class="trabalhos__cat accent">Fotografia + Edição</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item trabalhos__item--wide" data-category="design" data-id="5">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/casinha-acolhida-thumb.jpg" alt="ONG Casinha Acolhida" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">ONG Casinha Acolhida</h3>
+          <span class="trabalhos__cat accent">Coordenação de Arte</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="video" data-id="6">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/dalla-thumb.jpg" alt="Dalla Cervejaria" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Dalla Cervejaria</h3>
+          <span class="trabalhos__cat accent">Som + Produção</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="video" data-id="7">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/brax-thumb.jpg" alt="BRAX Sports Assets" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">BRAX Sports Assets</h3>
+          <span class="trabalhos__cat accent">Captação de Som</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="fotografia" data-id="8">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/sereia-lapa-thumb.jpg" alt="Sereia da Lapa" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Sereia da Lapa</h3>
+          <span class="trabalhos__cat accent">Making Of + Produção</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item trabalhos__item--wide" data-category="motion" data-id="9">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/teca-thumb.jpg" alt="Teçá Arte e Cultura" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Teçá Arte e Cultura</h3>
+          <span class="trabalhos__cat accent">Edição de Vídeo</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="video" data-id="10">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/espetaculo-thumb.jpg" alt="Espetáculo Entretenimento" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Espetáculo Entretenimento</h3>
+          <span class="trabalhos__cat accent">Produção de Campo</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="video" data-id="11">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/imaginatto-thumb.jpg" alt="Imaginatto" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Imaginatto</h3>
+          <span class="trabalhos__cat accent">Videomaker + Design</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="motion" data-id="12">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/doutora-drag-thumb.jpg" alt="Doutora Drag" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Doutora Drag</h3>
+          <span class="trabalhos__cat accent">Edição + Motion</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item trabalhos__item--wide" data-category="motion" data-id="13">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/imagem-integrada-thumb.jpg" alt="Imagem Integrada" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Imagem Integrada</h3>
+          <span class="trabalhos__cat accent">Videomaker + Motion + Design</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="video" data-id="14">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/linha-producoes-thumb.jpg" alt="Linha Produções" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Linha Produções</h3>
+          <span class="trabalhos__cat accent">Câmera + Motion</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="video" data-id="15">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/forca-terra-thumb.jpg" alt="Força da Terra" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Força da Terra</h3>
+          <span class="trabalhos__cat accent">Videomaker</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item" data-category="video" data-id="16">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/devassas-thumb.jpg" alt="Devassas" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Devassas</h3>
+          <span class="trabalhos__cat accent">Produção + Edição</span>
+        </div>
+      </article>
+
+      <article class="trabalhos__item trabalhos__item--wide" data-category="video" data-id="17">
+        <div class="trabalhos__thumb">
+          <img src="assets/projetos/coletiva-garagem-thumb.jpg" alt="Coletiva Garagem" loading="lazy">
+        </div>
+        <div class="trabalhos__info">
+          <h3 class="trabalhos__nome">Coletiva Garagem</h3>
+          <span class="trabalhos__cat accent">Direção + Videomaker + Design</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Modal de Projeto -->
+  <div class="modal" id="projetoModal">
+    <div class="modal__backdrop"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal__video" id="modalVideo"></div>
+      <div class="modal__body">
+        <span class="modal__cat accent" id="modalCategoria"></span>
+        <h2 class="modal__titulo" id="modalTitulo"></h2>
+        <p class="modal__desc" id="modalDescricao"></p>
+        <div class="modal__ficha">
+          <h3>Ficha Técnica</h3>
+          <dl class="modal__ficha-grid" id="modalFicha"></dl>
+        </div>
+        <div class="modal__galeria">
+          <h3>Galeria</h3>
+          <div class="modal__galeria-grid" id="galeriaGrid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Showreel -->
+  <section class="showreel" id="showreel">
+    <div class="showreel__container">
+      <h2 class="showreel__title">Show<span class="display-font accent">reel</span></h2>
+      <div class="showreel__video">
+        <div class="showreel__placeholder" id="showreelVideo" data-video-id="VIDEO_ID">
+          <div class="showreel__play">
+            <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <p>Clique para assistir</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta" id="cta">
+    <div class="cta__bg">
+      <img src="assets/cta-bg.jpg" alt="" loading="lazy">
+    </div>
+    <div class="cta__overlay"></div>
+    <div class="cta__content">
+      <h2 class="cta__title">Vamos criar algo incrível?</h2>
+      <p class="cta__text">Se você está interessado em trabalhar comigo e criar algo único, entre em contato.</p>
+      <a href="#contato" class="btn btn--light">Entre em Contato</a>
+    </div>
+    <blockquote class="cta__quote">
+      &ldquo;A criatividade é a inteligência se divertindo&rdquo;
+      <cite class="accent">Einstein</cite>
+    </blockquote>
+  </section>
+
+  <!-- Contato -->
+  <section class="contato" id="contato">
+    <div class="contato__container">
+      <div class="contato__left">
+        <h2 class="contato__title">Vamos <span class="accent">conversar</span></h2>
+        <p class="contato__text">Entre em contato para discutir seu próximo projeto audiovisual.</p>
+        <div class="contato__info">
+          <div class="contato__info-item">
+            <span class="contato__info-label">Email</span>
+            <a href="mailto:savyllaadryan@gmail.com">savyllaadryan@gmail.com</a>
+          </div>
+          <div class="contato__info-item">
+            <span class="contato__info-label">Localização</span>
+            <span>Rio de Janeiro, RJ</span>
+          </div>
+        </div>
+        <div class="contato__social">
+          <a href="https://www.instagram.com/savyllaadryan/" class="contato__instagram" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            <span>@savyllaadryan</span>
+          </a>
+        </div>
+      </div>
+      <form class="contato__form" id="contatoForm">
+        <div class="contato__field">
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="contato__field">
+          <input type="email" name="email" placeholder="Seu email" required>
+        </div>
+        <div class="contato__field">
+          <input type="text" name="assunto" placeholder="Assunto">
+        </div>
+        <div class="contato__field">
+          <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">SAVYLLA ADRYAN</span>
+      <p>&copy; 2024 Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
