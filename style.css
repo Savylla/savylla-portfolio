@@ -496,9 +496,22 @@ button { font-family: inherit; }
    ======================================== */
 .sobre {
   padding: 140px 40px;
+  position: relative;
+}
+
+.sobre::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background: rgba(7, 13, 24, 0.3);
+  z-index: 0;
 }
 
 .sobre__container {
+  position: relative;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -534,9 +547,10 @@ button { font-family: inherit; }
 .sobre__title {
   font-family: 'Bonheur Royale', cursive;
   font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.05;
   margin-bottom: 28px;
+  color: #ffffff;
 }
 
 .sobre__text {
